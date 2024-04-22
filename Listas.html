@@ -17,28 +17,55 @@
         pulaLinha();
     }
 
-    let pessoa = {
-    nome: "João",
-    idade: 25,
-    cpf: "123.456.789-00",
-    altura: 1.75,
-    maiorDeIdade: true
-};
 
-mostra("<h1>Lista de Pessoas </h1>");
+    let pessoas = [
+        {
+            nome: "João",
+            idade: 25,
+            cpf: "123.456.789-00",
+            altura: 1.75,
+            maiorDeIdade: true
+        },
 
-document.write(pessoa.nome + " tem " + pessoa.idade + " anos de idade, " + " " + pessoa.altura + " de altura, está inscrito no CPF " + pessoa.cpf);
+        {
+            nome: "José",
+            idade: 11,
+            cpf: "356.456.789-00",
+            altura: 1.30,
+            maiorDeIdade: false
+        },
 
-    if (pessoa.idade >= 18) {
+        {
+            nome: "JoCarlos",
+            idade: 41,
+            cpf: "821.456.789-00",
+            altura: 1.65,
+            maiorDeIdade: true
+        },
+
+        {
+            nome: "André",
+            idade: 9,
+            cpf: "213.456.789-00",
+            altura: 1.12,
+            maiorDeIdade: false
+        },
+    ];
+
+
+    mostra("<h1>Lista de Pessoas </h1>");
+
+    for (let i = 0; i <= pessoas.length; i++) {
+        let pessoa = pessoas[i]
+
+        document.write(pessoa.nome + " tem " + pessoa.idade + " anos de idade, " + " " + pessoa.altura + " de altura, está inscrito no CPF " + pessoa.cpf);
+
+        if (pessoa.idade >= 18) {
             mostra(" e é considerado maior de idade.");
         } else {
             mostra(" e é considerado menor de idade.");
         }
-
+    }
 
 
 </script>
-
-
-
-
