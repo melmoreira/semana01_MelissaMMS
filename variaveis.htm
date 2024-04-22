@@ -1,0 +1,70 @@
+<meta charset="UTF-8">
+
+<h1>Semana 1</h1>
+<br><br>
+<h2>Variáveis</h2>
+<br><br>
+
+
+<script>
+
+var nome = "Melissa"; 
+var telefone =  "17-98110-4609";
+// var sePossui = true; //convênio médico ou não (booleano)
+var profissao = "Docente";
+var salario = 7300.00;
+
+var profissional = nome + " é uma " + profissao + " percebendo a remuneração de R$" + salario;
+
+document.write(profissional);
+document.write("<br><br>");
+
+document.write("********************************************************");
+
+document.write("<br>");
+document.write("<br>");
+
+var a = 5
+var b = 10
+
+document.write("Valor de a: " + a)
+document.write("<br>");
+document.write("Valor de b: " + b)
+document.write("<br>");
+document.write("<br>");
+
+var temp = a
+a = b
+b = temp
+document.write("Valor atual de a: " + a)
+document.write("<br>");
+document.write("Valor atual de b: " + b)
+document.write("<br>");
+document.write("<br>");
+
+document.write("********************************************************");
+
+document.write("<br>");
+document.write("<br>");
+
+var a = 5;
+var b = 10;
+
+// Exibe os valores originais
+document.write("Valor de a: " + a);
+document.write("<br>");
+document.write("Valor de b: " + b);
+document.write("<br>");
+document.write("<br>");
+
+// Troca os valores das variáveis sem perder nenhum
+a = a + b; // Atribui a + b para a, agora a contém a soma dos valores originais de a e b
+b = a - b; // Atribui a - b (que é o valor original de a) para b, agora b contém o valor original de a
+a = a - b; // Atribui a - b (que é o valor original de b) para a, agora a contém o valor original de b
+
+// Exibe os valores após a troca
+document.write("Novo valor de a: " + a); // Agora a contém o valor original de b
+document.write("<br>");
+document.write("Novo valor de b: " + b); // Agora b contém o valor original de a
+
+</script>

@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<h1>Semana 1</h1>
+<br><br>
+<h2>Idade para Votar</h2>
+<br><br>
+
+<script>
+
+// Solicita a idade da pessoa
+let idade = parseInt(prompt("Por favor, digite sua idade:"));
+
+// Verifica se a idade está dentro das faixas para votar
+if (idade >= 16 && idade < 18) {
+    document.write("Você tem 16 ou 17 anos. O voto é opcional.");
+
+} else if (idade >= 18 && idade <= 70) {
+    document.write("Você tem entre 18 e 70 anos. O voto é obrigatório.");
+
+} else if (idade > 70) {
+    document.write("Você tem mais de 70 anos. O voto é opcional.");
+    
+} else {
+    document.write("Você ainda não tem idade suficiente para votar.");
+}
+
+
+</script>

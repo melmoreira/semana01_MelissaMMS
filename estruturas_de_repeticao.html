@@ -1,0 +1,119 @@
+<meta charset="UTF-8">
+
+<h1>Semana 1</h1>
+<br><br>
+<h2>Estruturas de Repetição.</h2>
+<br><br>
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    mostra("<h1> Jogo do PIM </h1>");
+
+    let i = 1;
+
+
+while (i <= 40) {    /* imprima enquanto o i for menor ou igual a 40*/
+    if (i % 4 === 0) {
+        mostra("PIM");
+    } else {
+        mostra(i);
+    }
+    i++;
+}
+
+
+/*
+    for (let i = 1; i <= 40; i++) {
+        if (i % 4 === 0) {
+            mostra("PIM");
+        } else {
+            mostra(i);
+        }
+    }
+*/
+
+
+/*
+O loop for é executado de 1 até 40.
+A cada iteração, verificamos se o número atual (i) é múltiplo de 4 usando o operador %. Se o resto da divisão de i por 4 for 0, significa que i é múltiplo de 4 e exibimos "PIM". Caso contrário, exibimos o número i.
+Desta forma, quando o número é múltiplo de 4, exibimos "PIM" em vez do número.
+*/
+
+
+
+mostra("<h1>Números de 1 a 50: pares ou ímpares?</h1>");
+
+mostra("Usando for:<br>");
+for (let i = 1; i <= 50; i++) {
+    if (i % 2 === 0) {
+        mostra(i + " é par");
+    } else {
+        mostra(i + " é ímpar");
+    }
+}
+
+
+
+mostra("<br>Usando while:<br>");
+let j = 1;
+while (j <= 50) {
+    if (j % 2 === 0) {
+        mostra(j + " é par");
+    } else {
+        mostra(j + " é ímpar");
+    }
+    j++;
+}
+
+
+mostra("<h1>Múltiplos de 3 até 100</h1>");
+
+mostra("Usando for:<br>");
+for (let k = 3; k <= 100; k +=3) {
+        mostra(k);
+}
+
+
+
+mostra("<br>Usando while:<br>");
+let w = 3;
+while (w <= 100) {
+           mostra(w);
+    w += 3;
+}
+
+
+
+mostra("<h1>De 100 até 0, pulndo de 2 em 2)</h1>");
+
+mostra("Usando for:<br>");
+for (let m = 100; m >= 0; m -=2) {
+        mostra(m);
+}
+
+
+
+mostra("<br>Usando while:<br>");
+let p = 100;
+while (p >= 0) {
+           mostra(p);
+    p -= 2;
+}
+
+
+
+
+
+</script>
+
+
+
+

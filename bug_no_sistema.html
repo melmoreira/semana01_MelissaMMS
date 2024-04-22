@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<h1>Semana 1</h1>
+<br><br>
+<h2>Calcule a litragem limite da sua Pscina Redonda!</h2>
+<br><br>
+
+<script>
+
+// Solicita ao usuário o raio da piscina
+let raio = parseInt(prompt("Digite o raio da piscina em metros:"));
+
+// Solicita ao usuário a altura da piscina
+let altura = parseInt(prompt("Digite a altura da piscina em metros:"));
+
+// Calcula o volume da piscina em metros cúbicos
+// let volumeMetrosCubicos = Math.PI * Math.pow(raio, 2) * altura;
+let volumeMetrosCubicos = 3.14 * (raio ** 2) * altura;
+
+// Converte o volume de metros cúbicos para litros
+let volumeLitros = volumeMetrosCubicos * 1000;
+
+// Exibe o resultado para o usuário
+document.write("O volume da piscina é de aproximadamente " + parseInt(volumeLitros) + " litros.");
+
+</script>
