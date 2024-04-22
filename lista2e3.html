@@ -9,9 +9,13 @@
 
     let letras = []
 
-    for (let i = 1; i <= 10; i++) {
-       let letra = prompt("Digite a letra " + i + " de 10");
+    function recebeLetra() {
+        let letra = prompt("Digite a letra " + i + " de 10");
        letras[i-1] = letra 
+    }
+
+    for (let i = 1; i <= 10; i++) {
+       recebeLetra()
     
        console.log (letra)
     
